@@ -38,7 +38,7 @@ input[type="text"], input[type="password"], input[type~="text"], input[type~="pa
     color: var(--main-text-color);
     background-color: var(--main-monet-color);
     border: 1px solid #938F99;
-    padding: 8px 16px;
+    padding: 8px;
     border-radius: 4px;
 }
 .small-textarea {
@@ -256,7 +256,7 @@ table.post > tbody > tr > td:nth-child(1){
     border-left: 0;
     border-right: 0;
 }
-a{
+a, #profile_link, .profile_link{
     transition: .3s;
 }
 .page_header {
@@ -279,13 +279,21 @@ a{
     width: 667px;
 }
 h4 {
-    border-bottom: 1px solid #49454F;
+    border-bottom: 0;
     color: #CAC4D0;
     font-size: 14px;
     font-weight: bold;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+.settings_delete {
+    margin: -12px;
+    padding: 12px;
+    margin-top: -8px;
+    background: var(--main-monet-color);
+    text-align: center;
+}
+.vouncher_input{padding: 8px !important; width: auto !important}
 input[type=checkbox] {
     background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='16' y='16' width='16' height='16' rx='1' stroke='%23CAC4D0' stroke-width='2'/%3E%3C/svg%3E%0A");
 }
@@ -412,11 +420,6 @@ input[type="search"]::placeholder, input[type~="search"]::placeholder{
     background-color: #1C1B1F !important;
     color: #fff;
     border-radius: 28px !important;
-    font-size: 14px;
-    line-height: 1.4;
-    white-space: normal;
-    outline: 0;
-    transition-property: transform,visibility,opacity;
 }
 .ovk-video>.preview, .video-preview {
     height: auto;
@@ -437,4 +440,30 @@ input[type="search"]::placeholder, input[type~="search"]::placeholder{
 }
 .expand_button:hover {
     background-color: #4A4458;
+}
+hr{
+    display: none;
+}
+#profile_link, .profile_link {
+    text-transform: capitalize;
+    padding: 10px 24px !important;
+    text-align: center;
+    border-radius: 100px;
+    margin-bottom: 5px;
+}
+#profile_link:hover, .profile_link:hover {
+    background: #4A4458;
+}
+.post-share-button:hover, .post-like-button:hover {
+    background: #4A4458;
+}
+#wallAttachmentMenu {
+    background-color: var(--main-monet-color);
+    border: 1px solid #49454F;
+}
+#wallAttachmentMenu>.header {
+    background-color: var(--main-monet-color);
+}
+#wallAttachmentMenu>a:hover {
+    background-color: #49454F;
 }
