@@ -25,10 +25,10 @@ input[type=email],
 input[type=password],
 input[type=phone],
 input[type=text],
-input[type ~ =email],
-input[type ~ =password],
-input[type ~ =phone],
-input[type ~ =text] {
+input[type ~=email],
+input[type ~=password],
+input[type ~=phone],
+input[type ~=text] {
     color: var(--main-text-color);
     background-color: var(--main-monet-color);
     border: 1px solid #938f99;
@@ -36,15 +36,15 @@ input[type ~ =text] {
     border-radius: 4px
 }
 input[type=search],
-input[type ~ =date],
-input[type ~ =search],
+input[type ~=date],
+input[type ~=search],
 select,
 textarea {
     color: var(--main-text-color);
     background-color: var(--main-monet-color);
     border: 1px solid #938f99
 }
-input[type ~ =date],
+input[type ~=date],
 select,
 textarea {
     padding: 8px;
