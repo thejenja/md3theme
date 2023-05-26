@@ -419,7 +419,7 @@ td {
     color: var(--main-text-color)
 }
 input[type=search],
-input[type ~ =search] {
+input[type ~=search] {
     width: 150px!important;
     background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.76 21.27L28.49 27L27 28.49L21.27 22.76C20.2 23.53 18.91 24 17.5 24C13.91 24 11 21.09 11 17.5C11 13.91 13.91 11 17.5 11C21.09 11 24 13.91 24 17.5C24 18.91 23.53 20.2 22.76 21.27ZM17.5 13C15.01 13 13 15.01 13 17.5C13 19.99 15.01 22 17.5 22C19.99 22 22 19.99 22 17.5C22 15.01 19.99 13 17.5 13Z' fill='%23CAC4D0'/%3E%3C/svg%3E%0A")no-repeat 117px!important;
     background-color: #1c1b1f!important;
@@ -429,7 +429,7 @@ input[type ~ =search] {
     font-size: 12px
 }
 input[type=search]::placeholder,
-input[type ~ =search]::placeholder {
+input[type ~=search]::placeholder {
     color: var(--main-link-color)
 }
 .tippy-box {
@@ -577,11 +577,11 @@ input[type ~ =search]::placeholder {
     padding: 15px 0 0;
     margin-bottom: 10px
 }
-.tippy-box[data-theme ~ =vk] {
+.tippy-box[data-theme ~=vk] {
     border-color: var(--main-monet-border);
     box-shadow: none
 }
-.tippy-box[data-theme ~ =light][data-placement^=bottom] > .tippy-arrow:before {
+.tippy-box[data-theme ~=light][data-placement^=bottom] > .tippy-arrow:before {
     border-bottom-color: var(--main-monet-color)
 }
 .heart {
@@ -713,4 +713,8 @@ center[style="background: white;border: #DEDEDE solid 1px;"] {
 .profileName h2 {
     color: var(--main-link-color)!important;
     font-size: 18px
+}
+#standaloneCommentBox {
+    background-color: var(--main-monet-color);
+    border-bottom: 1px dotted var(--main-monet-border);
 }
