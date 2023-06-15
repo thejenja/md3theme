@@ -718,3 +718,18 @@ center[style="background: white;border: #DEDEDE solid 1px;"] {
     background-color: var(--main-monet-color);
     border-bottom: 1px dotted var(--main-monet-border);
 }
+.searchOptions {
+    border-top: 1px solid var(--main-monet-border);
+    background-color: var(--main-monet-color);
+}
+.borderup {
+    border-top: 1px solid var(--main-monet-border);
+}
+.searchOptionName {
+    background-color: var(--hover-link-color);
+    color: #585858;
+    border-bottom: 2px solid var(--main-monet-border);
+}
+.searchList li:hover{
+    background: var(--hover-link-color);
+}
