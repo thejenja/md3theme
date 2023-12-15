@@ -131,7 +131,9 @@ div.container_gray b {
     border-radius: 100px;
     padding: 12px 15px;
     border-top: 0;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
 }
 .navigation .link:hover,
 .navigation_footer .link:hover,
@@ -730,6 +732,74 @@ center[style="background: white;border: #DEDEDE solid 1px;"] {
     color: #585858;
     border-bottom: 2px solid var(--main-monet-border);
 }
-.searchList li:hover{
-    background: var(--hover-link-color);
+.searchList li:hover, .audioEntry:hover, .searchList a:hover, .audioEntry.nowPlaying:hover{
+    background: var(--hover-link-color) !important;
+}
+.friendsAudiosList .elem:hover{
+    background: none;
+}
+.menu_divider {
+    background: var(--main-monet-border);
+}
+.bigPlayer {
+    background-color: var(--main-monet-color);
+    border-bottom: 0;
+    box-shadow: none;
+}
+.audioEntry.nowPlaying {
+    background: var(--main-link-color);
+    border: 0;
+    box-sizing: border-box;
+}
+.searchList #used {
+    color: var(--main-monet-color) !important;
+    border: 0;
+    background: var(--main-link-color);
+}
+.audioEntry.nowPlaying .title, .audioEntry.nowPlaying .performer a, .audioEntry.nowPlaying .info{
+    color: var(--main-monet-color) !important;
+}
+.audioEntry .performer a{
+    color: var(--hover-link-color)
+}
+.audioEntry:hover .performer a {
+    color: var(--main-link-color);
+}
+.searchOptions.newer {
+    border-left: 0;
+}
+.audioEmbed .track > .selectableTrack, .bigPlayer .selectableTrack {
+    position: relative;
+    height: 5px;
+    border-top: 0;
+    background-color: var(--hover-link-color);
+    border-radius: 2.5px;
+    overflow: hidden
+}
+.bigPlayer .paddingLayer .slider, .audioEmbed .track .slider {
+    width: 3px;
+    height: 5px;
+    background: var(--main-link-color);
+}
+.lagged {
+    filter: none;
+}
+.selectableTrack > div, div[style="position: relative;width: calc(100% - 18px);"]{
+    width: 100% !important;
+}
+.audioEntry{
+    width: inherit;
+    border: 0 !important;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -620px;
+  width: 620px;
+  height: 100%;
+  background-color: var(--main-link-color); /* Цвет левой полосы */
 }
